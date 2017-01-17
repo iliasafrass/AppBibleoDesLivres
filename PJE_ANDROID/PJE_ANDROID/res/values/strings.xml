@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">bibliothèque des livres</string>
+    <string name="title_webpage_detail">Livre Detail</string>
+    <string name="scan">Scan</string>
+</resources>

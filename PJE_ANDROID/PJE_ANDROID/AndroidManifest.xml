@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ilias.masterdetails">
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/book1"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        <activity android:name=".Menu">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".webpageListActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+
+        <activity
+            android:name=".webpageDetailActivity"
+            android:label="@string/title_webpage_detail"
+            android:parentActivityName=".webpageListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ilias.masterdetails.webpageListActivity" />
+        </activity>
+
+        <activity android:name=".CreerLivre"
+            android:label="CreerLivre"
+            >
+        </activity>
+        <activity android:name=".SuprimerLivre"
+            android:label="SupprimLivre"
+            >
+        </activity>
+
+        <activity android:name=".ModifierLivre"
+            android:label="ModifierLivre"
+            >
+        </activity>
+
+        <activity android:name=".Rechercher_livre"
+            android:label="Rechercher_livre"></activity>
+        <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    </application>
+
+</manifest>
